@@ -6,6 +6,9 @@ A Discord Nuking bot, made for educational Purposes.
 Do NOT use this for terrible and malicious tensions
 This is AGAISNT Discord/Terms Of Service/Terms Of Use
 
+# Discord Server
+[Discord](https://discord.gg/vnkWwSWQ)
+
 # Source Code:
 [SourceCode](https://replit.com/@MarinoKunstman1/Discord-Nuke-Bot?v=1)
 Source code is in replit.
