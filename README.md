@@ -2,7 +2,7 @@
 A Discord Nuking bot, made for educational Purposes.
 
 # Source Code:
-[SourceCode](https://replit.com/@MarinoKunstman1/Discord-Nuke-Bot#index.js)
+[SourceCode](https://replit.com/@MarinoKunstman1/Discord-Nuke-Bot?v=1)
 Source code is in replit.
 
 # Setup:
