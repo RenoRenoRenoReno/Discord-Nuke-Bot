@@ -1,3 +1,6 @@
+![Untitled(1)](https://user-images.githubusercontent.com/101154856/192133389-426dc3b0-2de7-4218-a17a-facabba6449e.png)
+
+
 # Discord-Nuke-Bot
 A Discord Nuking bot, made for educational Purposes.
 Do NOT use this for terrible and malicious tensions
