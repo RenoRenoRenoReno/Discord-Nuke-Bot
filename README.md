@@ -51,6 +51,8 @@ const client = new Client({
   ]
 })
 ```
+Intents you need:
+![image](https://user-images.githubusercontent.com/101154856/192133640-8bab3c65-7260-4cbb-874b-36125ce3b0ad.png)
 
 If you want to remove slash commands (Weird)
 Remove this code:
