@@ -1,5 +1,7 @@
 # Discord-Nuke-Bot
 A Discord Nuking bot, made for educational Purposes.
+Do NOT use this for terrible and malicious tensions
+This is AGAISNT Discord/Terms Of Service/Terms Of Use
 
 # Source Code:
 [SourceCode](https://replit.com/@MarinoKunstman1/Discord-Nuke-Bot?v=1)
